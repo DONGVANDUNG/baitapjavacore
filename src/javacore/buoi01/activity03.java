@@ -10,6 +10,6 @@ public class activity03 {
         System.out.println("nhap so b la:");
         b=sc.nextInt();
         System.out.println("tong cua a va b la:"+ (a +b ));
-        System.out.println("tich cua hai so a va b la:"+ (a+b));
+        System.out.println("tich cua hai so a va b la:"+ (a*b));
     }
 }
