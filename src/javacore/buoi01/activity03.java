@@ -1,6 +1,6 @@
 package javacore.buoi01;
 import java.util.Scanner;
-public class activity02 {
+public class activity03 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int a;
