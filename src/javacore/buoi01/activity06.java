@@ -10,6 +10,10 @@ public class activity06 {
         System.out.println("nhap so b la:");
         b=sc.nextInt();
         System.out.println(a+"+"+b+ "=" +(a+b) );
+        System.out.println(a+"-"+b+"=" +(a-b));
+        System.out.println(a+"x"+b+"="+ (a*b));
+        System.out.println(a+"/"+b+"="+ (a/b));
+        System.out.println(a+"mod"+b+   "="   +(a%b));
 
     }
 }
