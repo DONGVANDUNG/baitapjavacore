@@ -1,6 +1,6 @@
 package javacore.buoi02.com;
 import java.util.Scanner;
-public class activity21 {
+public class activity23 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("hay nhap n vao day");
