@@ -42,7 +42,6 @@ public class activity33 {
             }
         }
         System.out.println("phan tu nho thu hai cua mang la:" + min1);
-        for(int h=0;h<
 
     }
 }
