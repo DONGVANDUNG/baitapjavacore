@@ -25,13 +25,13 @@ public class activity32 {
         System.out.println("kich thuoc mang b la:" + b.length);
         System.out.println("length two array a va b la:" + (a.length + b.length));
         int[] c = new int[m + n];
-        for (int j = 0; j < m- 1; j++) {
-            System.out.print(a[j]);
-            {
-                for (int i = 0; i < n - 1; i++) {
-                    System.out.print(b[i]);
-                }
+        for (int i = 0; i <m+n-1 ; i++) {
+            for(int j=0;j<m+n-1;j++) {
+                c[j] = a[j];
+                c[i] = a[i];
+                System.out.println(c[i]+c[j]);
             }
         }
-    }
-}
+
+                }
+            }
