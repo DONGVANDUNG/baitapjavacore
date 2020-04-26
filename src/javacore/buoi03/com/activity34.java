@@ -9,7 +9,7 @@ public class activity34 {
         System.out.println("nhap vao noi dung cua chuoi");
         a = sc.nextLine();
         char b[] = a.toCharArray();
-        for (int i = b.length - 1; i > 0; i--) {
+        for (int i = b.length ; i > 0; i--) {
             System.out.print(b[i]);
         }
     }
