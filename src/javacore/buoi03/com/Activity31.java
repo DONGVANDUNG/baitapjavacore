@@ -14,8 +14,8 @@ public class Activity31 {
         }
         int result[] = new int[n];
         int newlength = 0;
-        boolean exist = false;
         for (int i = 0; i < n; i++) {
+            boolean exist = false;
             for (int j = 0; j < newlength; j++) {
                 if (a[i] == result[j]) {
                     exist = true;
@@ -28,11 +28,11 @@ public class Activity31 {
             }
         }
         int[] b = new int[newlength];
+        System.out.print("mang sau khi bo cac phan tu trung lap la: ");
+
         for (int i = 0; i < newlength; i++) {
             b[i] = result[i];
-            System.out.print(b[i]+" ");
+            System.out.print(+b[i] + " ");
         }
     }
-
-
 }
