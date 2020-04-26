@@ -1,7 +1,9 @@
 package javacore.buoi03.com;
+
 import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 
-import java.util. Scanner;
+import java.util.Scanner;
+
 public class activity32 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -11,25 +13,23 @@ public class activity32 {
         System.out.println("nhap vao kich thuoc cua mang b:=");
         int m = sc.nextInt();
         int[] b = new int[m];
-        for (int i = 0; i < a.length ; i++) {
+        for (int i = 0; i < a.length; i++) {
             System.out.print("a[" + i + "]=");
-           a[i]=sc.nextInt();
+            a[i] = sc.nextInt();
         }
-
-        for (int j = 0; j < b.length ; j++) {
+        for (int j = 0; j < b.length; j++) {
             System.out.print("b[" + j + "]=");
             b[j] = sc.nextInt();
         }
-        int x=0;
-        int[] c=new int[m+n];
-        for (int i = 0; i < n; i++) {
-             c[x] = a[0];
-            x++;System.out.print(c[x]);
-        }
-        for (int j=0;j<m;j++){
-            a[j] = sc.nextInt();
-            c[x] = a[j];
-            x++;System.out.print(c[x]);
+        int c[] = new int[m + n];
+        System.out.print("mang sau khi duoc gop la:");
+        for (int i = 0; i < m + n; i++) {
+            if (i < n) {
+                c[i] = a[i];
+            } else {
+                c[i] = b[i - n];
+            }
+            System.out.print(c[i] + " ");
         }
     }
 }
