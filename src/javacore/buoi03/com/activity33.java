@@ -53,6 +53,9 @@ public class activity33 {
             }
         System.out.print("mang sau khi sap xep la: ");
         for (int i = 0; i <n ; i++) {
+            if(a[i]<0){
+                a[i]=0;
+            }
             System.out.print(a[i]);
         }
         }
