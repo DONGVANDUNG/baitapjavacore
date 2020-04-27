@@ -13,43 +13,47 @@ public class activity33 {
             System.out.print("a[" + i + "]=");
             a[i] = sc.nextInt();
         }
-        int max1 = Integer.MIN_VALUE;
-        int max2 = Integer.MIN_VALUE;
-        int min1 = Integer.MAX_VALUE;
-        int min2 = Integer.MAX_VALUE;
-        int indexmax1 = -1;
-        int indexmax2 = -1;
-        int indexmin1 = -1;
-        int indexmin2 = -2;
-        for (int i = 0; i < n; i++) {
-            if (a[i] > max1) {
-                max1 = a[i];
-                indexmax1 = i;
-                System.out.println("phan tu lon nhat cua mang la:  o dong thu" + max1 + " " + indexmax1);
+        int max1=a[0];
+        int max2=a[0];
+        for (int i = 0; i <n ; i++) {
+            if(a[i]>max1){
+                max1=a[i];
+        }
+        }
+        System.out.println("phan tu lon nhat cua mang la: " +max1);
+        for (int i = 0; i <n ; i++) {
+            if(a[i]<max1 && a[i]>max2){
+                max2=a[i];
             }
-            if (a[i] > max1 && a[i] < max2) {
-                max2 = a[i];
-                indexmax2 = i;
-                System.out.println("pahn tu lon thu hai cua mang la:  o dong thu" + max2 + " " + indexmax2);
-
-                System.out.println("khong co phan tu lon thu hai");
-            } else if (indexmin1 == -1) {
-                System.out.println("khong co phan tu nho nhat");
-            } else if (indexmax1 == -1) {
-                System.out.println("khong co phan tu lon nhat");
+        }
+        System.out.println( "phan tu lon thu hai cua mang la: "+max2);
+        int min1=a[0];
+         int min2=a[0];
+        for (int i = 0; i <n ; i++) {
+            if(a[i]<min1){
+                min1=a[i];
             }
-            for (int k = 0; k < n; k++) {
-                for (int j = i + 1; j < n; j++) {
-                    if (a[i] > a[j]) {
-                        int temp = a[k];
-                        a[k] = a[j];
-                        a[j] = temp;
-                    }
-                    System.out.print("mang sap xeo theo thu tu tang dan la: " + a[k]);
+        }
+        System.out.println("phan tu nho nhat cua mang la: "+min1);
+        for (int i = 0; i <n ; i++) {
+            if(a[i]>min1&&a[i]<min2){
+                min2=a[i];
+            }
+        }
+        System.out.println("phan tu nho thu hai cua mang la :"+min2+" ");
+        for (int i = 0; i <n ; i++) {
+            for (int j = i+1; j < n; j++) {
+                if(a[j]<a[i]){
+                    int temp=a[i];
+                    a[i]=a[j];
+                    a[j]=temp;
                 }
-
             }
 
+            }
+        System.out.print("mang sau khi sap xep la: ");
+        for (int i = 0; i <n ; i++) {
+            System.out.print(a[i]);
+        }
         }
     }
-}
