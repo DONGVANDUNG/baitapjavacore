@@ -8,15 +8,22 @@ public class activity35 {
         String a;
         System.out.println("nhap vap noi dung cua chuoi:");
         a = sc.nextLine();
-        System.out.println("nhap vao ky tu:");
-        char c;
-        c = sc.next().charAt(0);
-        int dem = 0;
+        char[] c = a.toCharArray();
+        int max=0;
+        char d=0;
+        int dem = 1;
         for (int i = 0; i < a.length(); i++) {
-            if (a.charAt(i) == c) {
-                dem = dem + 1;
+            dem=1;
+            for(int j=i+1;j<a.length();j++){
+                if (c[i]==c[j]){
+                    dem=dem+1;
+                }
             }
+            if(dem>max){
+                max=dem;
+                d=c[i];
+            }
+            }
+        System.out.println((d)+"("+max+")");
         }
-        System.out.print( "("+dem+")");
     }
-}
