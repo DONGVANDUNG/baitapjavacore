@@ -3,8 +3,8 @@ package javacore.buoi04.com;
 import java.util.Scanner;
 
 public class Hinhchunhat {
-    float width;
-    float height;
+    private float width;
+    private float height;
 Scanner sc=new Scanner(System.in);
     public Hinhchunhat(float width, float height) {
         this.width = width;
