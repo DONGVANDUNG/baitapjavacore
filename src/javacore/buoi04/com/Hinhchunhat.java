@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class Hinhchunhat {
     private float width;
     private float height;
-Scanner sc=new Scanner(System.in);
+
     public Hinhchunhat(float width, float height) {
         this.width = width;
         this.height = height;
     }
+
     public float getHeight() {
         return height;
     }
@@ -25,16 +26,19 @@ Scanner sc=new Scanner(System.in);
     public void setWidth(float width) {
         this.width = width;
     }
-    public float getchuvi(){
-        return (width+height)*2;
+
+    public float getchuvi() {
+        return (width + height) * 2;
     }
-    public float getDientich(){
-        return width*height;
+
+    public float getDientich() {
+        return width * height;
     }
+
     public boolean check() {
         if (height == width) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
