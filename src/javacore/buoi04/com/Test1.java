@@ -9,7 +9,7 @@ public class Test1 {
         String a = sc.nextLine();
         System.out.print(" diem gpa la :");
         float b = sc.nextFloat();
-        Student student = new Student(a,b);
+        Student student = new Student(a, b);
         System.out.println(student.getName());
         System.out.println(student.getGpa());
         System.out.println(student.check() ? "ban do roi nhe" : "ban truot  roi hoc lai di ban");
