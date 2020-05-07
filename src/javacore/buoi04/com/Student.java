@@ -27,11 +27,7 @@ public class Student {
         }
     }
 
-    @Override
-    public String toString() {
-        return " [" +
-                "Ten: " + name +
-                ", gpa=" + gpa +
-                " ]";
+    public String toString(){
+        return "name:" +name + "gpa"+ gpa;
     }
 }
