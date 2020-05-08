@@ -17,11 +17,11 @@ public class BookManagement {
             System.out.print("\t+Ten tac gia la: ");
             String author = sc.nextLine();
             System.out.print("\t+Gia cua sach la: ");
-            long price = sc.nextLong();
+            long price = sc.nextInt();
             System.out.print("\t+Tong so da ban duoc la: ");
-            long totalSold = sc.nextLong();
+            long totalSold = sc.nextInt();
             sc.nextLine();
-            books[i] = new Book(name, author, price, totalSold);
+            books[ i] = new Book(name, author, price, totalSold);
         }
         sc.close();
     }
@@ -44,5 +44,11 @@ public class BookManagement {
             }
         }
         return banchay;
+    }
+    public void showInformationStudent(){
+        for (int i = 0; i <n ; i++) {
+            System.out.println("+Cuon sach thu "+(i+1)+books[i].toString());
+        }
+
     }
 }

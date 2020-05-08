@@ -44,21 +44,18 @@ public class Book {
     public void setTotalSold(long totalSold) {
         this.totalSold = totalSold;
     }
-
     public boolean isbestseller() {
         if (getTotalSold() > 1000) {
             return true;
         } else return false;
 
-    }
-
-    @Override
+}
     public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", price=" + price +
-                ", totalSold=" + totalSold +
+        return "{" +
+                "Bookname:" + name + "\t" +
+                ", author:" + author + "\t" +
+                ", price:" + price +"\t"+
+                ", totalSold:" + totalSold +
                 '}';
     }
 }
