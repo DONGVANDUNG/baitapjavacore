@@ -50,7 +50,15 @@ public class Book {
             return true;
         } else return false;
     }
-    public String toString(){
-        return "name:"+name;
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                ", price=" + price +
+                ", totalSold=" + totalSold +
+                '}';
     }
 }
+

@@ -19,7 +19,7 @@ public class BookManagement {
             System.out.print("\t+tong so da ban duoc: ");
             int a=sc.nextInt();
             sc.nextLine();
-            books[i]=new Book(s, author,gia,a);
+            books[i]=new Book(s, author,gia,5000);
         }
         sc.close();
     }
