@@ -10,7 +10,7 @@ public class StudentManagement {
         this.n = n;
         Scanner sc = new Scanner(System.in);
         students = new Student[n];
-        System.out.println("Nhap vao thong tin cho "+n+" sinh vien:");
+        System.out.println("Nhap vao thong tin cho " + n + " sinh vien:");
         for (int i = 0; i < n; i++) {
             System.out.print("\t+Ten sinh vien thu " + (i + 1) + " la: ");
             String name = sc.nextLine();
@@ -30,9 +30,9 @@ public class StudentManagement {
                 if (students[i].check()) {
                     count++;
                 }
-            }
-            else  {
-                if (!students[i].check()) { ;
+            } else {
+                if (!students[i].check()) {
+                    ;
                     count++;
                 }
             }
@@ -40,20 +40,21 @@ public class StudentManagement {
         return count;
     }
 
-    public Student timsvmax(){
-        Student beststudent=students[0];
-        for (int i = 1; i <n ; i++) {
-            if(students[i].getGpa()>beststudent.getGpa()){
-                beststudent=students[i];
+    public Student timsvmax() {
+        Student beststudent = students[0];
+        for (int i = 1; i < n; i++) {
+            if (students[i].getGpa() > beststudent.getGpa()) {
+                beststudent = students[i];
             }
         }
         return beststudent;
     }
-    public Student timsvmin(){
-         Student worststudent=students[0];
-        for (int i = 1; i <n ; i++) {
-            if(students[i].getGpa()<worststudent.getGpa()){
-                worststudent=students[i];
+
+    public Student timsvmin() {
+        Student worststudent = students[0];
+        for (int i = 1; i < n; i++) {
+            if (students[i].getGpa() < worststudent.getGpa()) {
+                worststudent = students[i];
             }
         }
         return worststudent;
