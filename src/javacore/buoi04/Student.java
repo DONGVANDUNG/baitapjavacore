@@ -1,4 +1,4 @@
-package javacore.bai42.com;
+package javacore.buoi04.com.com;
 
 public class Student {
     private String name;

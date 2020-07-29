@@ -1,4 +1,4 @@
-package javacore.bai42.com;
+package javacore.buoi04.com.com;
 
 import java.util.Scanner;
 

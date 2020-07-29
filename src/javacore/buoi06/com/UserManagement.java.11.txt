@@ -1,0 +1,88 @@
+package javacore.buoi06.com;
+
+import org.omg.CORBA.SetOverrideType;
+
+import java.util.Scanner;
+
+public class UserManagement {
+    private int totalUser;
+    private User[] users;
+
+    public UserManagement() {
+        }
+
+        public int getTotalUser () {
+            return totalUser;
+        }
+
+        public void setTotalUser ( int totalUser){
+            this.totalUser = totalUser;
+        }
+
+        public User[] getUsers () {
+            return users;
+        }
+
+        public void setUsers (User[]users){
+            this.users = users;
+        }
+
+        Scanner sc = new Scanner(System.in);
+
+    public UserManagement( int totalUser){
+            users = new User[users.length];
+            for (int i = 0; i < users.length; i++) {
+                System.out.println("ID cua nguoi dung thu " + i + " la: ");
+                int id = sc.nextInt();
+                System.out.println("Nhap vao ten nguoi dung: ");
+                String username = sc.nextLine();
+                sc.nextLine();
+                System.out.println("mat khau la: ");
+                String password = sc.nextLine();
+                System.out.println("ten hien thi la: ");
+                String displayname = sc.nextLine();
+                System.out.println("email la: ");
+                String email = sc.nextLine();
+                users[i] = new User(id, username, password, displayname, email);
+            }
+        }
+
+        public void findUserByUsername () {
+            System.out.println("Ten user ma ban muon kiem tra:");
+            String username1 = sc.nextLine();
+            User user = null;
+            for (int i = 0; i < users.length; i++) {
+                try {
+                    if (username1.equals(users[i].getUsername())) {
+                        user = users[i];
+                    }
+                } catch (Exception e) {
+                    System.out.println("Ten dang nhap " + username1 + " khong dung");
+                }
+            }
+            if (user == null) {
+                System.out.println("Nguoi dung khong ton tai!!");
+            } else {
+                user.toString();
+            }
+        }
+    public void login () {
+        System.out.println("Ten user ma ban muon kiem tra");
+        String username = sc.nextLine();
+        System.out.println("Mat khau la:  ");
+        String password = sc.nextLine();
+        User user = null;
+        for (int i = 0; i < totalUser; i++) {
+            try {
+                if (users[i].getUsername().equalsIgnoreCase(username) && users[i].getPassword().equalsIgnoreCase(password)) {
+                    user = users[i];
+                }
+            } catch (Exception e) {
+                System.out.println("Ten dang nhap " + username + "/" + " mat khau " + password + " khong dung");
+            }
+        }
+        if (user == null) {
+            System.out.println("Dang nhap khong thanh cong!!");
+        } else user.toString();
+    }
+    }

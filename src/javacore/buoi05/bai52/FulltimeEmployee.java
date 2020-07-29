@@ -1,4 +1,4 @@
-package javacore.bai52.com;
+package javacore.buoi05;
 
 public class FulltimeEmployee extends Employee{
     private static final long MEAL_ALLOWANCE = 2000000;

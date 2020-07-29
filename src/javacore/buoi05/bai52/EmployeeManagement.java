@@ -1,4 +1,4 @@
-package javacore.bai52.com;
+package javacore.buoi05;
 
 import java.util.Scanner;
 

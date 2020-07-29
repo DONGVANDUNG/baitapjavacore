@@ -1,4 +1,4 @@
-package javacore.bai51.com;
+package javacore.buoi05.com;
 
 public class Book {
     private String name;

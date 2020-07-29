@@ -1,6 +1,4 @@
-package javacore.bai51.com;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+package javacore.buoi05.com;
 
 public class Apptest {
     public static void main(String[] args) {

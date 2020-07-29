@@ -1,4 +1,4 @@
-package javacore.buoi01;
+package javacore.buoi01.com;
 
 import java.sql.SQLOutput;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package javacore.buoi01;
+package javacore.buoi01.com;
 import java.util.Scanner;
 public class activity02 {
     public static void main(String[] args) {
